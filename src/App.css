@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+
+  /* colors  */
+  --color-primary: #256492;
+  --color-secondary: #253040;
+  --color-accent: #BDD0DE; 
+  --color-main-gray: #737373;
+
+
+  /* fonts  */
+}
+
+@layer components {
+  .container-section {
+    @apply w-full px-4 sm:px-6 md:px-10 lg:px-20;
+  }
+
+  .nav-link {
+    @apply text-main-gray  font-semibold lg:text-lg hover:text-primary transition duration-300;
+  }
+  
+  .active-link {
+    @apply focus:text-primary focus:underline focus:underline-offset-4 focus:decoration-2 focus:decoration-primary;
+  }
+}
