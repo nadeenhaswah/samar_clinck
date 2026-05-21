@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { Mail ,Phone , MapPin  } from 'lucide-react';
+import { IoLogoWhatsapp  } from "react-icons/io";
 function Footer() {
   return (
     <>
@@ -15,6 +17,42 @@ function Footer() {
               healthy, confident, and beautiful smile "
             </p>
           </div>
+
+          {/* contact info  */}
+          <div className="flex flex-col gap-3 items-center justify-start ">
+            <span className="text-sm text-primary font-semibold">Contact</span>
+
+            <div className="flex flex-col justify-start gap-4">
+              {/* email  */}
+              <div className="flex items-center gap-4 text-main-gray hover:text-primary transition-colors duration-300 hover:scale-105">
+                <span><Mail size={20}/></span>
+                <a href="mailto:nadeen66h@gmail.com" className="text-main-gray">nadeen66h@gmail.com</a>
+              </div>
+
+              {/* phone :  */}
+              <div className="flex items-center  gap-4 text-main-gray hover:text-primary transition-colors duration-300 hover:scale-105">
+                <span><Phone /></span>
+                <a href="tel:+20102222222" className="text-main-gray">+20102222222</a>
+              </div>
+
+              {/* address  */}
+              <div className="flex items-center gap-4 text-main-gray hover:text-primary transition-colors duration-300 hover:scale-105">
+                <span><MapPin /></span>
+                <p className="text-main-gray">123 Main Street, City, Country</p>
+              </div>
+
+              {/* media links */}
+              <div className="flex items-center justify-start gap-4 text-primary transition-colors duration-300 hover:scale-105">
+                <a href="https://wa.me/20102222222" className="text-primary"><IoLogoWhatsapp  size={30}/></a>
+                <a href="https://www.instagram.com/samar_clinic" className="text-primary"><i class="text-3xl fa-brands fa-square-instagram"></i></a>
+
+                
+              </div>
+
+            </div>
+          </div>
+
+
         </div>
         <div className="flex items-center justify-center py-5 text-center w-full shadow shadow-3xl shadow-accent bg-primary  mt-7">
           <p className="text-xs md:text-sm text-white">
